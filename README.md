@@ -1,9 +1,8 @@
 # News
 Postgresql,Express,Nodejs,Angular
 
-This is a web based application. In this, admin can do CRUD operations in news. In Dashboard page, there will be list of news
-headings with images. 
-And user can click particular news heading to read the news.
+This is a web based application. In this, admin can login and do CRUD operations in news. In Home page, there will be list of news
+headings with images shown. And user can click particular news heading to read the news.
 
 This application includes various functionality:
 1. Login and Signup 
