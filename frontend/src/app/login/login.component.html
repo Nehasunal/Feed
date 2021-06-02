@@ -1,0 +1,57 @@
+
+<div class="container-fluid">
+
+<app-alerts></app-alerts>
+
+<div class="card">
+
+    <h4 class="card-header" style="text-align:center">Login</h4>
+    <div class="card-body ">
+
+        <form  (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email"
+                 [formControl]="email"
+                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                 required >
+                     <div class="alertred" *ngIf="email.touched">
+                        <p class="alertred" *ngIf="email.errors?.required">Email is a required field!</p>
+                        <p class="alertred" *ngIf="email.errors?.pattern">This is not a valid Email!!!</p>
+                     </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password"
+                [formControl]="password" required>
+                <div class="alertred" *ngIf="password.touched">
+                    <div class="alertred" *ngIf="password.errors?.required">Password is required field!</div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-6 col-md-6">
+
+              </div>
+              <div class="form-group col-lg-6 col-md-6">
+                <a style="text-align:right;"
+                 routerLink="/forgetpassword">Forget Password?</a>
+              </div>
+
+            </div>
+            <div class="row">
+
+            <div class="form-group col-lg-6 col-md-6" >
+                <button type="submit" [disabled]="!email.valid || !password.valid "  class="btn btn-primary">
+                    Login
+                </button>
+            </div>
+            <div class="form-group col-lg-6 col-md-6">
+              <a class="btn btn-dark btn-outline-light"  routerLink="/home">Back</a>
+            </div>
+
+          </div>
+        </form>
+    </div>
+</div>
+
+</div>

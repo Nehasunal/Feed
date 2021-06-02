@@ -1,0 +1,83 @@
+<app-alerts></app-alerts>
+<div class="row">
+  <div class="col-lg-3">
+     <div class="sidenav">
+         <a href="#">News</a>
+         <a  (click)="onLogout()" value="logout">Logout</a>
+
+     </div>
+  </div>
+  <div class="col-lg-9">
+    <div class="row">
+  <h1>Hi {{this.current.name}}!</h1>
+    </div>
+
+     <div class="row">
+       <!-- search and add -->
+    <div class="col-lg-6">
+      <input (keyup)="searchData($event)" type="text"
+             class="form-control" placeholder="Search"
+            aria-label="Searchbox" aria-describedby="basic-addon1"><p>{{search}}</p>
+       </div>
+       <div class="col-lg-6">
+         <div class="container-fluid">
+          <a class="btn btn-dark btn-outline-light"  routerLink="/add">+ Add</a>
+         </div>
+       </div>
+     </div>
+
+     <!-- table -->
+      <div class="row">
+
+<table  style="width:1000px" class="table table-bordered">
+		  <thead>
+
+			<tr >
+        <th *ngFor="let col of displayedColumns" >{{col}}
+       </th>
+
+           <th>action</th>
+</tr>
+
+		  </thead>
+		  <tbody>
+			 <tr  *ngFor="let user of users| paginate: { itemsPerPage: limit, currentPage: p, totalItems: total } ">
+			<td>{{user.title}}</td>
+        <td>{{user.description}}</td>
+				<td><img src="{{user.img}}" [alt]="user.title" ></td>
+				<td width="200">
+          <a class="btn btn-dark btn-outline-light"  routerLink="/edit/{{user.id}}" >Edit</a>
+
+				</td>
+			 </tr>
+
+		  </tbody>
+		</table>
+
+</div>  <!-- table row end -->
+<!-- pagination -->
+<div class="row">
+<div class="col-lg-6">
+<div class="container-fluid">
+Show Entries
+    <select (click)="pageSize($event)">
+         <option *ngFor="let size of pageSizes" [ngValue]="size">
+           {{ size }}
+         </option>
+    </select>
+
+</div>
+</div>
+<div class="col-lg-6 ">
+    <div class=" pagination mx-right  ">
+        <pagination-controls (pageChange)="getPage($event)"></pagination-controls>
+    </div>
+</div>
+</div>
+
+
+
+
+<!-- ////end -->
+  </div>
+</div>

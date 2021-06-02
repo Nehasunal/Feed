@@ -1,0 +1,74 @@
+<app-alerts></app-alerts>
+<div class="container-fluid">
+
+<div class="card">
+
+    <h4 class="card-header" style="text-align:center">Add</h4>
+    <div class="card-body ">
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="title">Title</label>
+                 <!-- [formControl]="title" -->
+                <input type="text" class="form-control" name="title"
+                  formControlName = "title"
+                 required >
+                     <div class="alertred" *ngIf="f.title.touched">
+                        <p class="alertred" *ngIf="f.title.errors?.required">Title is a required field!</p>
+                   </div>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="description" class="form-control" name="description"
+                formControlName = "description"
+                 required >
+                     <div class="alertred" *ngIf="f.description.touched">
+                        <p class="alertred" *ngIf="f.description.errors?.required">Description is a required field!</p>
+                   </div>
+            </div>
+
+<div class="form-group">
+            <div >
+              <input type="file"  class="form-control" (change)="selectImage($event)" name="file" formControlName="file" required>
+            </div>
+            <div class="row">
+            <div class="text-center col-lg-6">
+
+              <image-cropper
+              [imageChangedEvent]="imageChangedEvent"
+              [maintainAspectRatio]="true"
+              [aspectRatio]="4 / 4"
+              [resizeToWidth]="256"
+              format="png"
+              (imageCropped)="imageCropped($event)"
+              (imageLoaded)="imageLoaded()"
+              (cropperReady)="cropperReady()"
+              (loadImageFailed)="loadImageFailed()">
+
+                    </image-cropper>
+             </div>
+             <div class="text-center col-lg-6">
+               <div class = "image-preview">
+                 <img [src]= "croppedImage"  />
+             </div>
+            </div>
+  </div>
+  </div>
+
+            <div class="row">
+
+            <div class="form-group col-lg-6 col-md-6" >
+                <button type="submit" [disabled]="!f.title.valid || !f.description.valid ||!f.file.valid"  class="btn btn-primary">
+                    Submit
+                </button>
+            </div>
+            <div class="form-group col-lg-6 col-md-6">
+                <a class="btn btn-dark btn-outline-light"  routerLink="/dashboard">Back</a>
+            </div>
+
+          </div>
+        </form>
+    </div>
+</div>
+
+</div>

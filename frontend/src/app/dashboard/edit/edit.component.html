@@ -1,0 +1,87 @@
+<app-alerts></app-alerts>
+<div class="container-fluid">
+
+  <div class="card">
+
+      <h4 class="card-header" style="text-align:center">Edit</h4>
+      <div class="card-body ">
+   <form [formGroup]="editEmp" (ngSubmit)="updateUser()" ><br><br>
+     <!-- (submit)="updateEmployee()" -->
+<div class="form-group">
+   <label for="title" class="col-sm-2 control-label">title</label>
+   <div class="col-sm-9">
+     <input type="text" class="form-control" name="title"
+      formControlName="title" required>
+<div *ngIf="f.title.touched">
+  <p *ngIf="f.title.errors?.required">Title is a required field!</p>
+
+</div>
+
+</div>
+ </div>
+
+ <div class="form-group">
+   <label for="description" class="col-sm-2 control-label">Description </label>
+   <div class="col-sm-9">
+     <input type="text" class="form-control" name="description" formControlName="description" required>
+     <div *ngIf="f.description.touched">
+       <p *ngIf="f.description.errors?.required">Description is a required field!</p>
+
+     </div>
+   </div>
+ </div>
+
+ <div class="form-group">
+             <div >
+               <input type="file"  class="form-control"
+               (change)="selectImage($event)" name="file"
+               formControlName="file" required>
+               </div>
+              
+             <div class="row">
+             <div class="text-center col-lg-6">
+
+               <image-cropper
+               [imageChangedEvent]="imageChangedEvent"
+               [maintainAspectRatio]="true"
+               [aspectRatio]="4 / 4"
+               [resizeToWidth]="256"
+               format="png"
+               (imageCropped)="imageCropped($event)"
+               (imageLoaded)="imageLoaded()"
+               (cropperReady)="cropperReady()"
+               (loadImageFailed)="loadImageFailed()">
+
+                     </image-cropper>
+              </div>
+              <div class="text-center col-lg-6">
+                <div class = "image-preview">
+                  <img [src]= "croppedImage"  />
+              </div>
+             </div>
+   </div>
+   </div>
+
+ <div class="form-group">
+   <div class="row">
+
+   <div class="col-lg-6 col-sm-8">
+     <button type="submit" class="btn btn-success"
+     [disabled]="!editEmp.valid">Update</button>
+</div>
+     <div class="col-lg-6 ">
+        <a class="btn btn-dark btn-outline-light"  routerLink="/dashboard">Back</a>
+
+   </div>
+
+ </div>
+
+
+
+ </div>
+</form>
+
+ </div>
+</div>
+
+</div>

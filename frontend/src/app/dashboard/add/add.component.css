@@ -1,0 +1,27 @@
+.btn, .btn-info, .btn-success,.btn-danger{
+    width:85px;
+    margin-left: 7px;
+}
+
+.image-preview img{
+  height: 130px;
+  margin-top:5px;
+}
+
+.container-fluid{
+  margin-top:100px;
+  margin-left: 400px;
+}
+.card{
+
+  width:400px;
+
+
+
+}
+.card-header{
+
+}
+.alertred{
+  color: red;
+}

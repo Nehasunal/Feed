@@ -1,0 +1,67 @@
+<div class="row">
+  <div class="col-lg-1">
+
+  </div>
+  <div class="col-lg-10">
+<app-header></app-header>
+  </div>
+  <div class="col-lg-1">
+
+  </div>
+</div>
+<div class="row">
+
+  <div class="col-lg-1">
+
+  </div>
+  <div class="col-lg-10">
+    <div class="row">
+      <br><br>
+    </div>
+
+   <div class="card card-stats" *ngFor="let user of users">
+<a target="_blank" routerLink="/newsdetails/{{user.id}}">
+     <div class="card-body ">
+                 <div class="numbers">
+             <div class="row">
+               <div class="col-lg-8">
+                 <p class="card-title">{{user.title}}
+                 </p>
+               </div>
+               <div class="col-lg-4">
+                 <img src="{{user.img}}" [alt]="user.title" >
+               </div>
+
+             </div>
+
+           </div>
+</div>
+</a>
+<hr>
+
+ </div>
+<br><br>
+<div class="row">
+ <div class="col-md-12">
+   <div class="card ">
+     <div class="card-header ">
+       <h5 class="card-title">Users Visit</h5>
+       <p class="card-category">24 Hours performance</p>
+     </div>
+     <div class="card-body ">
+       <canvas id=chartHours width="400" height="100"></canvas>
+     </div>
+     <div class="card-footer ">
+       <hr>
+       <div class="stats">
+         <i class="fa fa-history"></i> Updated 3 minutes ago
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+<div class="col-lg-1">
+
+</div>
+</div>
