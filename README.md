@@ -15,26 +15,26 @@ This application includes various functionality:
 
 # Screenshots
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(164).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(164).png)
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(165).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(165).png)
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(167).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(167).png)
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(169).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(169).png)
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(170).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(170).png)
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(171).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(171).png)
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(172).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(172).png)
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(173).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(173).png)
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(174).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(174).png)
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(175).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(175).png)
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(177).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(177).png)
 
-![Image of Yaktocat](https://github.com/Nehasunal/NewsProject/blob/master/frontend/src/assets/Screenshot%20(178).png)
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(178).png)
