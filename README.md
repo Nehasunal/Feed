@@ -22,6 +22,12 @@ This application includes various functionality:
 
 ![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(169).png)
 
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(185).png)
+
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(186).png)
+
+![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(187).png)
+
 ![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(170).png)
 
 ![Image of Yaktocat](https://github.com/Nehasunal/News/blob/master/frontend/src/assets/Screenshot%20(171).png)
